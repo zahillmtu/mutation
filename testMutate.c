@@ -22,7 +22,7 @@ int main ()
     memset(print, 0x0, 40);
     sprintf(c_file, "v%d.c", r);
     sprintf(file, "v%d", r);
-    sprintf(print, "printf(\"rand num: %d\");", r);
+    sprintf(print, "printf(\"rand num: %d\\n\");", r);
 
     int fd = open(c_file, O_WRONLY | O_CREAT, 0744);
     write(fd, str, strlen(str));
